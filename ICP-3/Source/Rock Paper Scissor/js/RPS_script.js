@@ -46,7 +46,7 @@ function play(userChoice) {
             alert("Congrats You Won !!! Your opponent had paper");
         } else {
             console.log("User choice is Scissors and opponentChoice is Rock");
-            alert("Sorry You Lost !!! Your opponent had rock");
+            alert("Sorry You Lost !! Your opponent had rock");
         }
     }
 }
