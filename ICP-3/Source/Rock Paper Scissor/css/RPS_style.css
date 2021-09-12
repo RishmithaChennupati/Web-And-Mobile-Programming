@@ -1,0 +1,59 @@
+*{
+    margin: 5px;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #b92c28;
+}
+header{
+    background-color: blue;
+    padding: 20px;
+}
+
+header>h2 {
+    color: darkred;
+    text-align: center;
+    font-family: Arial, serif;
+}
+
+.black{
+    background-color: blueviolet;
+}
+.pic{
+    width:100px;
+    height:100px;
+}
+#content{
+    display: -webkit-flex;
+}
+img{
+    width: 250px;
+    height: 150px;
+}
+
+#paper{
+    margin-top: 180px;
+    margin-left: -500px;
+}
+#scissors{
+    margin-top: 180px;
+    margin-left: -400px;
+}
+#rock{
+    margin-top: 10px;
+    justify-content: center;
+    margin-left: 120px;
+}
+.sample{
+    height: 500px;
+    width: 500px;
+}
+
+
+
+
+
+
+
+
