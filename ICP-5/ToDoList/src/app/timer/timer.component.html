@@ -1,0 +1,11 @@
+<div style="text-align: center; font-weight: 900; padding-left: 10px; padding-right: 10px; padding-top: 10px; font-size: 50px; 
+font-family:  'Courier New', monospace; color: #0d47a1;">
+  TIMER
+</div>
+<div class="container" >
+  <input [(ngModel)]="target" type="datetime-local">
+  <div class="countdown">
+    {{time}} - <span id="seconds">{{seconds}} seconds</span>
+  </div>
+</div>
+

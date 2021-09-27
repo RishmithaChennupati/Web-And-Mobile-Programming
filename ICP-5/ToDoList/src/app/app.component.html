@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  // 1. write Typescript code in "app.component.ts" to work with ToDo list
+</head>
+<body>
+<br><br>
+<div style="text-align: center; font-weight: 900; padding-top: 5px; padding-bottom: 5px; font-size: 50px; 
+font-family:  'Courier New', monospace; color: #e91ec7;">MANAGE YOUR TASKS BELOW</div>
+<div class="row" id="todo">
+  <div class="col-sm-offset-3 col-md-6">
+    <div class="input-group">
+      <input id="addItem" type="text" class="form-control" [(ngModel)]="newItem" placeholder="Task Name">
+      <span class="input-group-addon" id="basic-addon2">
+        <button class = "addTask" (click)="newTask()">Add Task</button> </span>
+    </div>
+    <br>
+
+    <table class="table table-responsive">
+      <thead>
+      <tr>
+        <th class="text-center">To-do list</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of items; let i = index" class="text-center">
+        <td id="{{i}}" style="font-style: italic;">
+          {{item}}
+        </td>
+        <td class="text-right">
+          <div class="btn-group">
+            <button class="bt2"  (click)="deleteItem(i)"><i class="fa fa-trash"></i></button>
+            <button class="bt"  (click)="completeItem(item,i)"><i class="glyphicon glyphicon-thumbs-up"></i></button>
+
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+<div>
+  <app-timer></app-timer>
+</div>
+
+</body>
+</html>
